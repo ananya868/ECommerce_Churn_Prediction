@@ -32,7 +32,3 @@ Link : https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-a
 
 ************************************************************************************************************
 
-## Technologies Used
-
-![image](https://user-images.githubusercontent.com/77207245/206840274-30f095bf-eb95-4fda-9397-1ae7962a5e1b.png)
-
