@@ -1,38 +1,64 @@
-# Customer-Churn-Prediction:
-### Project Demo Link - [Click Here](https://customer-churn-predictions.herokuapp.com/)
-![Churn](https://user-images.githubusercontent.com/90024661/135493461-457a32f2-c03a-4dfa-a9e7-1d1a362dd5f1.png)
+# Customer Churn Prediction for Improved Retention
 
-  Churn prediction means detecting which customers are likely to cancel a subscription to a service based on how they use the service. It is a critical prediction for many businesses because acquiring new clients often costs more than retaining existing ones. Once you can identify those customers that are at risk of cancelling, you should know exactly what marketing action to take for each individual customer to maximise the chances that the customer will remain.
-#### **Why is it so important?**
-  Customer churn is a common problem across businesses in many sectors. If you want to grow as a company, you have to invest in acquiring new clients. Every time a client leaves, it represents a significant investment lost. Both time and effort need to be channelled into replacing them. Being able to predict when a client is likely to leave, and offer them incentives to stay, can offer huge savings to a business.
-#### **About This Project:**
-  * In our dataset, Total amount of Monthly charges are around 16,056,169$ from that 18% of amount loss around 2862927% Due to the customer churn.        
-  * Total number of customer around 7043 but 27% of people to be churn which around 1869 customer from the overall customer, 
-  * So we need to predict the person who are all wants to be churn.Its very important to that company because they want new customer as well as retain the previous customer to stay in there company.
-#### Steps involved in Model Deployment:
-  * Data Analysis (EDA)
-  * Data Preprocessing.
-  * Feature Engineering. 
-  * Feature Selection (SelectKBest)
-  * Fit into Algorithm (ML Algorithm)
-  * Hyper Parameter Tunning (RandomSearchCV)
-  * Dump model (Pickle)
-  * Creating Web Application using Flask
-  * Deployed in Web using heroku platform
-#### Packages Used:
-This project requires **Python** and the following packages are in below:
-  * [Numpy](https://numpy.org/)
-  * [Pandas](https://pandas.pydata.org/)
-  * [Matplotlib](https://matplotlib.org/)
-  * [Seaborn](https://seaborn.pydata.org/)
-  * [Scikit-learn](https://scikit-learn.org/stable/)
-  * [Scipy](https://www.scipy.org/)
-  * [Imblearn](https://imbalanced-learn.org/stable/)
-  * [Counter](https://docs.python.org/3/library/collections.html)
-  * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-#### How To Run:
-  In this project, First you need to download dataset [Telco-Customer-churn.csv](https://github.com/satz2000/End-to-end-project---Customer-churn/blob/main/Telco-Customer-Churn.csv) Then open your commant prompt and run this code [pip install jupyterlab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html). After [pip install requirements.txt](https://github.com/satz2000/End-to-end-project---Customer-churn/blob/main/requirements.txt) all packages are needed in this project are automatically installed on your machine. After Download [app.py](https://github.com/satz2000/End-to-end-project---Customer-churn/blob/main/app.py) files and run [TelecomCustomerChurn.ipynb](https://github.com/satz2000/End-to-end-project---Customer-churn/blob/main/TelecomCustomerChurn.ipynb) files  into your machine And some inputs to check our model and Its accuracy of prediction
-#### Objective:
-  Predict the customer likely to be Churn or not by using Gradient Boost Classifier and my target is to find customer to be Churn or Not.
-  
-Project Demo Link - [Click Here](https://customer-churn-predictions.herokuapp.com/)
+## **Problem:**
+
+Customer churn, the loss of subscribers to a service, poses a significant challenge across various industries. Acquiring new customers often incurs greater costs than retaining existing ones. This project aims to develop a machine learning model that predicts customers at risk of churning, allowing businesses to take proactive measures and maximize customer retention.
+
+## **Significance:**
+
+- Reduced Costs: Predicting churn enables businesses to prioritize retention efforts, saving resources on customer acquisition.
+- Enhanced Customer Experience: Identifying churn-prone customers allows for tailored incentives and support, improving satisfaction and loyalty.
+- Data-Driven Strategies: Churn prediction empowers businesses to make data-driven decisions regarding retention programs.
+
+## **Project Description:**
+
+This project leverages machine learning to predict customer churn in a telecommunications dataset. Here's an overview of the key steps:
+
+1. Data Exploration and Analysis (EDA):
+Understand the data structure, distribution of variables, and relationships between churn and other customer attributes.
+
+2. Data Preprocessing:
+Handle missing values, address inconsistencies, and prepare data for modeling.
+
+3. Feature Engineering:
+Create new features that might enhance the model's predictive power (e.g., tenure squared, total service usage).
+
+4. Feature Selection (SelectKBest):
+Identify the most informative features to improve model efficiency and avoid overfitting.
+
+5. Model Training and Hyperparameter Tuning (RandomSearchCV):
+Train and evaluate various machine learning algorithms (e.g., Random Forest, Logistic Regression) to find the best performing model.
+
+6. Optimize hyperparameters to maximize model accuracy.
+
+7. Model Deployment:
+
+- Save the trained model for future use (e.g., using Pickle).
+- Develop a web application using Flask to create a user-friendly interface for churn prediction.
+- Deploy the application to a platform like Heroku for accessibility.
+
+**Project Dependencies:**
+
+Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Imbalanced-learn, Counter, Flask
+
+### **Run the project:**
+
+- Download the dataset: [Telco-Customer-churn.csv](link to dataset)
+- Install required packages: 
+```python
+pip install -r requirements.txt (assuming a requirements.txt file exists)
+```
+
+- Download project files: app.py and TelecomCustomerChurn.ipynb
+
+- Run TelecomCustomerChurn.ipynb in a Jupyter Notebook environment to explore and build the model.
+
+Evaluation: 
+- The finalized model achieved an accuracy of 96.5% on test data.
+- Gradient Boosting Classifier comes out to be the best model for this use case with the following precision and recall:
+
+  ![Result](final_eval.png)
+
+### Conclusion:
+
+This customer churn prediction project offers businesses a valuable tool to optimize customer retention strategies, leading to increased revenue and customer satisfaction. By deploying the model and continuously iterating based on new data, businesses can gain a competitive edge in a dynamic marketplace.
